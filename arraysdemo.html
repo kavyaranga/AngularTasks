@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="" ng-init="names=['kavya','divi','mrudhul']">
+   <ul> Names are : <li ng-repeat="name in names"> {{name | uppercase}} </li></ul>
+
+    <ul> Names are : <li ng-repeat="name in names"> {{name | lowercase}} </li></ul>
+    
+</body>
+</html>

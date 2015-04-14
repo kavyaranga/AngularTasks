@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="" >
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+    <script> 
+      function SimpleController($scope){
+      
+          $scope.customers = [{name:'Kavya Ranga',city:'Khammam'},{name:'Mrudhul',city:'Bhadrachalam'},{name:'Divi',city:'Hyderabad'}];
+      }
+    </script>
+<title>Insert title here</title>
+</head>
+<body  >
+ 
+    Name : <input type="text" data-ng-model="name">
+    
+    <ul>
+      <li ng-repeat="cut in customers | filter:name | orderBy:'city' "> {{cut.name}} -- {{cut.city}}</li>
+    </ul>
+
+</body>
+</html>   

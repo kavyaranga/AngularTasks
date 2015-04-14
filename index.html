@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body ng-app="" ng-init="customers=[{name:'Kavya Ranga',city:'Khammam'},{name:'Mrudhul',city:'Bhadrachalam'},{name:'Divi',city:'Hyderabad'}]">
+ 
+    Name : <input type="text" data-ng-model="name">
+    
+    <ul>
+      <li ng-repeat="cut in customers | filter:name"> {{cut.name}} -- {{cut.city}}</li>
+    </ul>
+
+</body>
+</html>

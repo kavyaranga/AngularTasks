@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script>
+    var app = angular.module('store', ['ngRoute' ]);
+    
+    app.config(function($routeProvider){
+        $routeProvider
+          .when('/',
+                {
+                  controller:'SimpleController',
+                  templateUrl:'NamePage.html'
+        })
+        .when('/CityPage',
+              {
+                  controller:'SimpleController',
+                  templateUrl:'CityPage.html'
+        })
+        .otherwise({redirectTo: '/' });
+    });
+    app.factory('SimpleFactory',function(){
+        
+        var customers = [{name:'Kavya Ranga',city:'Khammam'},{name:'Mrudhul',city:'Bhadrachalam'},{name:'Divi',city:'Hyderabad'}];
+        
+        var factory = {};
+        
+        factory.getCustomers = function(){
+        return customers;
+         };
+        
+        factory.postCustomers = function(){
+         
+         };
+        
+        return factory;
+    });
+    
+    app.controller("SimpleController", function($scope, SimpleFactory){
+        $scope.customers =[];
+        init();
+        
+        function init(){
+          $scope.customers = SimpleFactory.getCustomers();
+        }
+        
+          $scope.addCustomer = function(){
+              
+              $scope.customers.push({name:$scope.newcustomer.name,city:$scope.newcustomer.city});
+          };
+      });
+       
+    </script>
+<title>Insert title here</title>
+</head>
+<body>
+ <div ng-view="">
+ 
+</div>
+</body>
+</html>   

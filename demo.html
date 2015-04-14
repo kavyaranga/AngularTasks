@@ -1,0 +1,50 @@
+
+<html>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<head>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#stop').onchange(function() {
+     this.form.submit;
+    });
+});
+        
+    </script>
+</head>
+<body align="center">
+    <h1>Transport Management Form</h1>
+
+        <s:form commandName="stop" method="post" action="busList">
+        <table border="1" align="center">
+             <tr>
+             <td>Select Route</td>
+                <td>
+                    <s:select path="stop_id" id="stop" onchange="submitform()">
+                     <c:forEach items="${stopsList}" var="stop">
+                      <option value=${stop.stop_id}>${stop.name}</option>
+                    </c:forEach>
+                    </s:select>
+                </td>
+            </tr>
+         </table>
+        </s:form>
+
+        <s:form commandName="bus" method="post" action="busList">
+                <table border="1" align="center">
+                     <tr>
+                     <td>Select Bus</td>
+                        <td>
+                            <s:select path="name" onchange="this.form.submit()">
+                             <c:forEach items="${busesList}" var="bus">
+                              <option value=${bus.bus_id}>${bus.name}</option>
+                            </c:forEach>
+                            </s:select>
+                        </td>
+                    </tr>
+                 </table>
+                </s:form>
+</body>
+</html>

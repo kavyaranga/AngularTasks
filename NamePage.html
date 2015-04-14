@@ -1,0 +1,18 @@
+
+<div>
+    Search for Existing Task : <input type="text" ng-model="filter.name">
+    
+    <ul>
+      <li ng-repeat="task in tasks | filter:filter.name"> {{task.name}} -- {{task.description}} </li>
+    </ul>
+    <br/>
+    Input a New Task <br/>
+    Task Name : <input type="text" ng-model="newtask.name">
+    <br/>
+    <br/>
+    Task Description: <input type="text" ng-model="newtask.description">
+    <br/>
+    <button ng-click="addCustomer()">AddCustomer</button>
+    <br/>
+    <a href="#/CityPage">CityPage</a>
+</div>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="fv.gif"/>
+    <title>Sukanya Samriddhi Account Scheme</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+    <style>
+        body{
+            background-color: #4dbbac;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-family: cursive;
+        }
+        .footerColor{
+            color: #ffffff;
+            margin-top: 12px;
+        }
+        .bgimage {
+            background: url('bgimage.jpg') no-repeat;            
+        }
+        .jumbotronsize{
+        padding: 100px 0;
+        }
+        .btnGrp
+        {
+            margin-top: 70px;
+            padding-right: 160px;
+        }
+        .carousel-inner > .item > img {
+            margin: 0 auto;
+        }
+        .carouselImage
+        {
+            width: 300px;
+            height: 300px
+        }
+        .featuresImage
+        {
+            width: 300px;
+            height: 350px   
+        }
+        #image{
+            position:relative;
+            z-index: -1;
+        }
+        #content{
+            height:750px;
+            width:100%;
+            background-color: #4dbbac;
+            position: relative;
+            z-index: 1;
+        }
+      .bgcolor{
+         background-color: #FF9900;
+      }
+    .paddingleft{
+        padding-left: 15px;
+    }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+    var isIE = window.ActiveXObject || "ActiveXObject" in window;
+    if (isIE) {
+        $('.modal').removeClass('fade');
+    }
+});
+    </script>
+    <script type="text/javascript">
+        var ypos,image;
+        function parallex(){
+            ypos = window.pageYOffset;
+            image = document.getElementById('image');
+            image.style.top = ypos * .4 +'px';
+        }
+            window.addEventListener('scroll',parallex);
+    </script>
+    
+    
+    <body data-spy="scroll" data-target="#my-navbar">
+       
+        <div id="content">
+       <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+           <div class="container"> 
+           <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a href="#" class="navbar-brand">Sukanya Samridhi Scheme</a>
+            </div>
+               
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <a href="http://rbidocs.rbi.org.in/rdocs/content/pdfs/494SSAC110315_A3.pdf" download="AppicationForm" class="btn btn-info navbar-btn pull-right"><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> Application Form</a>
+                    <ul class="nav navbar-nav pull-left">
+                            <li class="active"><a href="#About"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> About Us</a></li>
+                            <li class="dropdown">
+                               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Criterias <i class="caret"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#Commencement" data-toggle="modal">Commencement</a></li>
+                                    <li><a href="#Depositor" data-toggle="modal">Depositor</a></li>
+                                    <li><a href="#Eligibility" data-toggle="modal">Eligibility</a></li>
+                                    <li><a href="#Banks" data-toggle="modal">Banks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#Gallery"><span class="glyphicon glyphicon-picture" aria-hidden="true"> Gallery</a></li>
+                            <li><a href="#Contact"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> Contact US</a></li>
+                            <li><a href="#Features"><span class="glyphicon glyphicon-sort" aria-hidden="true"> Pros-Cons</a></li>
+                            <li><a href="#MoreInfo"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> More Info</a></li>
+                        </ul>
+                    </div>      
+            </div>
+        </nav>
+        <div class="jumbotron bgimage jumbotronsize">
+         <div class="container">   
+            
+                <div class="btn-group pull-right btnGrp">
+                  <a href="http://india.gov.in/my-government/schemes?page=6" target="_blank" class="btn btn-default">View More Schemes</a>
+                  <a href="http://www.indiapost.gov.in/SukanyaSamriddhi.aspx" target="_blank" class="btn btn-info">Govt Site</a>
+                </div>
+        </div>
+        </div>
+        <div class="container" style="margin-top: -95px;">
+            <section>
+            <div class="page-header" id="About">
+                <h3>Sukanya Samridhi Scheme</h3>
+                <p>Tax Exemption Under 80C.....!!!!!</p>
+                <div class="row">
+                    <div class="col-lg-8">
+                       <ul>
+                        <li> Higher Interest Rate</li>
+                        <li> Tax Benefit Under Section 80C</li>
+                        <li> Payment on Maturity to Girl Child.</li>
+                        <li> Interest Payment even after Maturity if account is not closed.</li>
+                        <li> Flexibility in Deposits- Any Number of time amount can be deposits in Multiple of Rs. 100 subject to Maximum Limit of Rs. 1.50 Lakh per year.</li>
+                        <li> Transferable Anywhere in India.</li>
+                        <li> Even Girl Child can operate after she attains the Age of 10 Year.</li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-4 pull-left">
+                        <img src="images.jpg" class="img-rounded" alt="Sukanya Samridhi Scheme" width="304" height="200"> 
+                    </div>
+                </div>
+            </div>
+             </section>
+        </div>
+        
+        <section>
+            <div class="well">
+                <div class="container">
+                <div class="page-header" id="Contact">
+                    <h3>Contact US</h3>
+                    <p>Leave your details we will reach you..!!</p>
+                    <form action="MAILTO:kavyacapable@gmail.com" class="form-inline" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="subscription">Name</label>
+                            <input type="text" class="form-control" id="subscription" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" class="form-control" id="email" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Subscribe</label>
+                            <input type="tel" class="form-control" id="tele" placeholder="Your Phone Number">
+                        </div>
+                        <a href="#Subscribe" class="btn btn-info" data-toggle="modal">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="container">
+         <section>
+            <div class="page-header" id="Gallery">
+                <h3>Gallery</h3>
+                    <p>Check out the people who have been  denefited with this scheme</p>
+                
+                <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                         <li data-target="#screenshot-carousel" data-slide-to="0"></li>
+                         <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                         <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                         <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                    </ol>
+                
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="girl0.jpg" alt-text="First Girl" class="carouselImage active" >
+                        <div class="carousel-caption">
+                            <h3>First Girl</h3>
+                            <p>I am the first girl benefitted with this scheme</p>
+                        </div>
+                    </div>
+                     <div class="item">
+                        <img src="girl1.jpg" alt-text="Second Girl" class="carouselImage">
+                        
+                    </div>
+                     <div class="item">
+                        <img src="girl4.jpg" alt-text="Third Girl" class="carouselImage">
+                        
+                    </div>
+                     <div class="item">
+                        <img src="girl3.jpg" alt-text="Fourth Girl" class="carouselImage">
+                        
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#screenshot-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#screenshot-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            </div>
+         </section>
+        </div>
+        
+        <div class="well">
+        <section>
+        <div class="container">
+                <div class="page-header" id="Features">
+                <h3>Pros-Cons</h3>
+                    <p>The Pros-Cons of this scheme are as follows....!!!</p>
+                </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <h4>Pros</h4>
+                    <ol>
+                  <li> Higher Interest Rate</li>
+                    <li> Tax Benefit Under Section 80C</li>
+                    <li> Payment on Maturity to Girl Child.</li>
+                    <li> Interest Payment even after Maturity if account is not closed.</li>
+                   <li> Flexibility in Deposits- Any Number of time amount can be deposits in Multiple of Rs. 100 subject to Maximum Limit of Rs. 1.50 Lakh per year.</li>
+                    <li> Transferable Anywhere in India.</li>
+                   <li> Even Girl Child can operate after she attains the Age of 10 Year.</li></ol>
+                    <h4>Cons</h4>
+                    <ol>
+                   <li> High Lock in Period</li>
+                   <li> Limitation on No. of Account</li>
+                    <li> Scheme do not provide for online transfer of Amount in this account. It allows only payment by Cash, Cheque and Demand Draft.</li>
+                    <li> No Clarity on Future Interest Rate for this account.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-4">
+                    <img src="features.jpg" alt="Save Girl Child" class="featuresImage">
+                </div>
+            </div>
+        </div>
+        </section>
+        </div>
+        
+        <div class="container">
+         <section>
+            <div class="page-header" id="MoreInfo">
+                <h3>More Info</h3>
+                <p>
+                    More Information regarding the SSY account
+                </p>
+                <div class="row">
+                    <div class="panel-group" id="accordion">                      
+                        <div class="panel panel-default bgcolor">
+                            <div class="panel-title">
+                                <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span> Documents to Open the Account</a>
+                            </div>
+                            <div id="collapse-1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                
+                            
+                            <p>Birth certificate of a girl child in whose name the account is opened shall be submitted by the guardian at the time of opening of the account in post office or bank along with other documents relating to identity and residence proof of the depositor.
+
+As of now, government owned banks are still in the process of completing formalities to open the Sukanya Samriddhi Yojana (SSY)Account, you may visit any of the government banks for the purpose of opening the account. (Some of these banks include – State Bank of India , Bank of Baroda, Punjab National Bank, Bank of India, Canara Bank, Andhra Bank,UCO Bank, Allahabad Bank, Corporation Bank etc.,).</p>
+                            </div>
+                            </div>
+                            
+                        </div>
+                    
+                        <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Maximum and Minimum Deposit</a>
+                            </div>
+                            <div id="collapse-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            
+                            <p>he account may be opened with an initial deposit of one thousand rupees and thereafter any amount in multiple of one hundred rupees may be deposited subject to the condition that a minimum of one thousand rupees shall be deposited in a financial year but the total money deposited in an account on a single occasion or on multiple occasions shall not exceed one lakh fifty thousand rupees in a financial year.
+ 
+Minimum – Rs, 1000/- Per Year
+Maximum- Rs. 1,50,000/- Per Year</p>
+                           </div>
+                            </div>
+                            
+                        </div>
+                         
+                        <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Term Period</a>
+                            </div>
+                            <div id="collapse-3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p>Deposits can be made till completion of fourteen years from the date of opening of the account.
+ 
+<b>The maturity of the account is</b> 21 years from the date of opening of account or if the girl gets married before completion of such 21 years. In other words No Deposit for the period from 15th to 21st Year of account.
+ 
+<b>Regularisation of irregular account and Penalty – </b>Where minimum amount of Rs. 1000/- a year has not been deposited than such irregular account may be regularised on payment of a penalty of fifty rupees per year along with the minimum subscription of Rs. 1000/- for the year (s) of default any time till the account completes fourteen years.</p>
+                        </div>
+                            </div>
+                            </div>                    
+                    
+                         <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-4" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Pass book</a>
+                            </div>
+                            <div id="collapse-4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p><ul><li>On opening an account, the depositor shall be given a pass book bearing the date of birth of the girl child, date of opening of account, account number, name and address of the account holder and the amount deposited.</li> 
+<li>The pass book shall be presented to the post office or bank. as the case may be, at the time of depositing money in the account and receiving payment of interest and also at the time of final closure of the account on maturity.</li></ul></p>
+                         </div>
+                        </div>
+                       </div>
+                    
+                         <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-5" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Maximum and Minimum Deposit</a>
+                            </div>
+                            <div id="collapse-5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p>The account may be opened with an initial deposit of one thousand rupees and thereafter any amount in multiple of one hundred rupees may be deposited subject to the condition that a minimum of one thousand rupees shall be deposited in a financial year but the total money deposited in an account on a single occasion or on multiple occasions shall not exceed one lakh fifty thousand rupees in a financial year.
+ 
+Minimum – Rs, 1000/- Per Year
+Maximum- Rs. 1,50,000/- Per Year</p>
+                         </div>
+                            </div>
+                            
+                        </div>
+                       <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-6" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-align-center" aria-hidden="true"></span>  Who can Operation the account</a>
+                            </div>
+                            <div id="collapse-6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p><ol><li> The account shall be opened and operated by the natural or legal guardian of a girl child till the girl child in whose name the account has been opened attains the age of ten years.
+</li><li> On attaining age of ten years, the account holder that is the girl child may herself operate the account. However, deposit in the account may be made by the guardian or any other person or authority.</li></ol></p>
+                         </div>
+                            </div>
+                            
+                        </div>
+                  <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-7" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> Premature closure of account </a>
+                            </div>
+                            <div id="collapse-7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p><ol><li> In the event of death of the account holder. the account shall be closed immediately on production of death certificate issued by the competent authority and the balance at the credit of the account shall be paid along with interest till the month preceding the month of premature closure of the account , to the guardian of the account holder.
+</li><li>Where the Central Government is satisfied that operation or continuation of the account is causing undue hardship to the account holder, it may, by order for reasons to be recorded in writing, allow pre-mature closure of the account only in cases of extreme compassionate grounds such as medical support in life‑ threatening diseases, death, etc.</li></ol></p>
+                         </div>
+                            </div>
+                            
+                        </div>
+                  <div class="panel panel-default bgcolor">
+                             <div class="panel-title">
+                                <a href="#collapse-8" data-toggle="collapse" data-parent="#accordion" class="paddingleft"><span class="glyphicon glyphicon-flag" aria-hidden="true"></span> Tax Benefit </a>
+                            </div>
+                            <div id="collapse-8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            
+                            <p>The amount deposited towards Sukanya Samriddhi Account is deductible under section 80C of Income tax Act,1961 upto Rs.1.5 lakhs as notified by Notification No. 09/2015 dated 21.01.2015. Amount deposited in this account will be counted in overall limit of Rs. 1.50 Lakh under section 80C. Interest earned in this scheme as well as maturity amount is exempt from Income Tax wef F.Y. 2014-15. Also Read- Interest on & withdrawal from Sukanya Samriddhi Account exempt from Tax</p>
+                         </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+             
+            </div>
+         </section>
+        </div>
+        
+        
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                     
+                    <p class="pull-left footerColor">&copy;Copyright @ 2015 Created by Kavya Ranga
+                    </p>
+                    <p class="pull-right footerColor">Made In India
+                    </p>
+                
+            </div>
+        </nav>
+        
+     
+<div class="modal fade" id="Commencement">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Commencement</h4>
+      </div>
+      <div class="modal-body">
+        <p>Prime Minister Narendra Modi has Launched Sukanya Samridhi Yojna’ (girl child prosperity scheme) on 22nd January 2015 with the vision to provide Education and Marriage Expense for Girl Child. Sukanya Samriddhi Account Scheme is a small deposit scheme for girl child, as part of ‘Beti Bachao Beti Padhao’ campaign, which would fetch yearly interest rate of 9.1 per cent and provide income tax deduction Under section 80C of the Income Tax Act,1961.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Depositor">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Depositor</h4>
+      </div>
+      <div class="modal-body">
+        <p>For this scheme Depositor is an individual who on behalf of a minor girl child of whom he or she is the guardian and deposits amount in account opened under this scheme.
+Who can be ‘Guardian’ under this Scheme – In relation to a minor girl Child Guardian means
+ <ol>
+     <li>either father or mother; and</li>
+     <li> where neither parent is alive or is incapable of acting, a person entitled under the law for the time being in force to have the care of the property of the minor.</li>
+    </ol>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<div class="modal fade" id="Eligibility">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Eligibility</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Age Restriction for Opening of Account-</b> The account may be opened by the natural or legal guardian in the name of a girl child from the birth of the girl child till she attains the age of ten years and any girl child, who had attained the age of ten years, one year prior to the commencement of these rules shall also be eligible for opening of account under these rules. Scheme is been commenced from 02.12.2014.<hr>
+ 
+<b>Grace Period for Opening of Account-</b> Account can be opened up to age of 10 years only from the date of birth.<hr>
+ 
+<small>For initial operations of Scheme, one year grace has been given. With the grace, Girl child who is born between 2.12.2003 & 1.12.2004 can open account up to 1.12.2015.</small>
+</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="modal fade" id="Banks">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h4 class="modal-title">Banks</h4>
+          <p>As of now, government owned banks are still in the process of completing formalities to open the Sukanya Samriddhi Yojana (SSY)Account, you may visit any of the government banks for the purpose of opening the account.</p>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Name of the Bank</td>
+                <td>Interest Rate</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bank of Baroda</td>
+                <td>9.10</td>
+            </tr>
+            <tr>
+                <td>Punjab National Bank</td>
+                <td>9.10</td>
+            </tr>  
+            <tr>
+                <td>Canara Bank</td>
+                <td>9.10</td>
+            </tr>  
+            <tr>
+                <td>Bank of India</td>
+                <td>9.10</td>
+            </tr>  
+            <tr>
+                <td>Andhra Bank</td>
+                <td>9.10</td>
+            </tr>  
+        </tbody>
+      </table>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Subscribe">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <p>Your Details has been sent </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-550815d260322f03" async="async"></script>
+    </div>
+    </body>
+</html>

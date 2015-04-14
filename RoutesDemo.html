@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script>
+    var app = angular.module('store', ['ngRoute' ]);
+    
+    app.config(function($routeProvider){
+        $routeProvider
+          .when('/',
+                {
+                  controller:'SimpleController',
+                  templateUrl:'NamePage.html'
+        })
+        .when('/CityPage',
+              {
+                  controller:'SimpleController',
+                  templateUrl:'CityPage.html'
+        })
+        .otherwise({redirectTo: '/' });
+    });
+    
+    app.controller("SimpleController", function($scope){
+        
+          $scope.customers = [{name:'Kavya Ranga',city:'Khammam'},{name:'Mrudhul',city:'Bhadrachalam'},{name:'Divi',city:'Hyderabad'}];
+        
+          $scope.addCustomer = function(){
+              
+              $scope.customers.push({name:$scope.newcustomer.name,city:$scope.newcustomer.city});
+          };
+      });
+       
+    </script>
+<title>Insert title here</title>
+</head>
+<body>
+ <div ng-view="">
+ 
+</div>
+</body>
+</html>   

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+<meta charset="ISO-8859-1">
+    <title>Angular TO DO App</title>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles_main.css">
+<script>
+    var app = angular.module('store', ['ngRoute' ]);
+    
+    app.config(function($routeProvider){
+        $routeProvider
+          .when('/',
+                {
+                  controller:'AddController',
+                  templateUrl:'AddTask.html'
+        })
+        .when('/',
+                {
+                  controller:'ChangeTaskStatusController',
+                  templateUrl:'ChangeTaskStatus.html'
+        })
+        .when('/RemoveTask',
+              {
+                  controller:'RemoveTaskController',
+                  templateUrl:'RemoveTask.html'
+        })
+        .otherwise({redirectTo: '/' });
+    });
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+ <div ng-view="">
+ 
+</div>
+</body>
+</html>   

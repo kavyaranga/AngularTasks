@@ -1,0 +1,31 @@
+
+<div>
+    <section>
+         <article>
+    Search for Existing Task : <input type="text" ng-model="filter.name">
+    
+    <ul>
+      <li ng-repeat="task in tasks  | filter:filter.name track by  $index"> {{task.name}} -- {{task.description}} <button class="clear" ng-click="removeTask($index)">X</button></li>
+    </ul>
+     </article>
+    
+    <article>   
+    Input a New Task <br/><br/>
+    Task Name : <input type="text" class="form-control" ng-model="newtask.name">
+    <br/>
+    <br/>
+    Task Description: <input type="text"  class="form-control" ng-model="newtask.description">
+    <br/>
+    <button class="clear" ng-click="addTask()">AddTask</button>
+        </article>
+    <article> 
+    
+    Remove a Task <br/><br/>
+    Task Name : <input type="text" class="form-control" ng-model="removetask.name">
+    <br/>
+        <br/>
+    <button class="clear" ng-click="removeTask()">RemoveTask</button>
+    </article>
+        </section>
+</div>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+<meta charset="ISO-8859-1">
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles_main.css">
+<script>
+    var app = angular.module('store', ['ngRoute' ]);
+    
+    app.config(function($routeProvider){
+        $routeProvider
+          .when('/',
+                {
+                  controller:'ToDoController',
+                  templateUrl:'AddTask.html'
+        })
+        .when('/RemoveTask',
+              {
+                  controller:'ToDoController',
+                  templateUrl:'RemoveTask.html'
+        })
+        .otherwise({redirectTo: '/' });
+    });
+    
+    app.controller("ToDoController", function($scope, ToDoFactory){
+        
+          $scope.tasks = [];
+        
+        init();
+        
+        function init(){
+          $scope.tasks = ToDoFactory.getTasks();
+        }
+        
+          $scope.addTask = function(){
+              
+              ToDoFactory.postTasks($scope.newtask.name,$scope.newtask.description);
+              $scope.newtask.name="";
+              $scope.newtask.description="";
+          };
+        
+        $scope.removeTask = function($index){
+            
+              ToDoFactory.removeTask($index);
+          };
+      });
+    
+    
+       app.factory('ToDoFactory',function(){
+        
+        var saved =  localStorage.getItem('tasks');
+               console.log(saved);
+        tasks = (localStorage.getItem('tasks')!="[]") ? JSON.parse(saved) : [ {name:'Kavya Ranga',description:'Khammam'},{name:'Mrudhul',description:'Bhadrachalam'},{name:'Divi',description:'Hyderabad'} ];
+           
+	localStorage.setItem('tasks', JSON.stringify(tasks));
+        var factory = {};
+        
+        factory.getTasks = function(){
+        return tasks;
+         };
+        
+        factory.postTasks = function(newname,newdescription){
+            
+            tasks.push({name:newname,description:newdescription});
+            
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+         };
+           
+        factory.removeTask = function(removename){
+            
+            console.log(removename);
+            
+               if (removename!==-1) {
+                tasks.splice(removename,1);
+                   localStorage.setItem('tasks', JSON.stringify(tasks));
+                   
+                return true;
+                } else {
+                        return false;
+                    }
+            
+            
+            
+            
+         };
+        
+        return factory;
+    });
+       
+    </script>
+<title>Insert title here</title>
+</head>
+<body>
+ <div ng-view="">
+ 
+</div>
+</body>
+</html>   
